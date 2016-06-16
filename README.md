@@ -8,7 +8,6 @@ A repository for openshift configuration files
 $ vagrant up
 $ vagrant ssh
 ```
-
 2. Logging in to Openshift Command Line
 ```bash
 $ oc login
