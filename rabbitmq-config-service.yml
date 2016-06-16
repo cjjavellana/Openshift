@@ -20,4 +20,3 @@ spec:
       targetPort: 25672
   selector:
     name: rabbitmq
-          
