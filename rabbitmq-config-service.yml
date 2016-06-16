@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbitmq-service
+  annotations:
+    description: Exposes and load balances the mq services
+spec:
+  ports:
+    - name: mq1
+      port: 4369
+      targetPort: 4369
+    - name: mq2
+      port: 5671
+      targetPort: 5671
+    - name: mq3
+      port: 5672
+      targetPort: 5672
+    - name: mq4
+      port: 25672
+      targetPort: 25672
+  selector:
+    name: rabbitmq
+          
